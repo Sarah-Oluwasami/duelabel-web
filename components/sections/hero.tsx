@@ -1,25 +1,14 @@
 import { hero } from "@/lib/site";
-import { PuzzleImage, Typewriter } from "@/components/motion";
+import Image from "next/image";
+import { Typewriter } from "@/components/motion";
 import { SmoothLink } from "@/components/ui/smooth-link";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-navy text-white">
-      {/* Photo, cut into a floating mosaic. Dark shade + Due Blue glow on top keep the text readable. */}
-      <div className="hero-zoom absolute inset-0 [filter:saturate(.75)_brightness(.9)]" aria-hidden>
-        <PuzzleImage src="/images/hero.jpg" ratio={1.5} className="absolute inset-0" />
-      </div>
-      <div
-        className="absolute inset-0"
-        aria-hidden
-        style={{
-          background:
-            "linear-gradient(180deg,rgba(11,31,59,.84) 0%,rgba(11,31,59,.78) 45%,rgba(11,31,59,.92) 100%),radial-gradient(ellipse 60% 70% at 70% 40%,rgba(37,99,235,.28),transparent 70%)",
-        }}
-      />
-      <div className="glitter glitter-a" aria-hidden />
-      <div className="glitter glitter-b" aria-hidden />
-      <div className="glitter glitter-c" aria-hidden />
+    <section id="top" className="relative overflow-hidden bg-charcoal text-white">
+      {/* Photo with a neutral scrim so the text stays readable. */}
+      <Image src="/images/hero.jpg" alt="" fill priority sizes="100vw" className="object-cover object-[center_40%]" aria-hidden />
+      <div className="absolute inset-0 bg-black/55" aria-hidden />
 
       <div className="container-site relative flex flex-col items-center gap-[22px] pb-12 pt-20 text-center">
         <div className="text-[13px] font-semibold uppercase tracking-[0.14em] text-cyan">{hero.eyebrow}</div>
