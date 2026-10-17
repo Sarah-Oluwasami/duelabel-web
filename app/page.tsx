@@ -17,11 +17,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <StackMarquee />
-        {/* Services and Why share one white → navy gradient so they flow into each other. */}
-        <div className="ground relative [&>section]:relative [&>section]:z-[1]">
-          <Services />
-          <Why />
-        </div>
+        <Services />
+        <Why />
         <Process />
         <Work />
         <Values />

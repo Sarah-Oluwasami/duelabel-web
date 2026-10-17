@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
 
 export function Services() {
   return (
-    <section id="services" className="grid-texture relative">
+    <section id="services" className="relative bg-white">
       <div className="container-site relative flex flex-col gap-12 pb-24 pt-[104px]">
         <Reveal className="flex max-w-[640px] flex-col gap-3.5">
           <span className="eyebrow text-blue">What we build</span>

@@ -22,7 +22,7 @@ export function Why() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <section id="about" className="relative">
+    <section id="about" className="relative bg-navy">
       <div className="container-site flex flex-col gap-14 pb-24 pt-[104px]">
         <Reveal className="flex max-w-[720px] flex-col gap-3.5">
           <span className="eyebrow text-cyan">{why.eyebrow}</span>
